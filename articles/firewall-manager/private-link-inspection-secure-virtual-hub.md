@@ -83,7 +83,7 @@ The main problems that you might have when you attempt to filter traffic destine
 
 - Clients are unable to connect to private endpoints.
 
-- Azure Firewall is bypassed. You can validate this symptom  the absence of network or application rules log entries in Azure Firewall.
+- Azure Firewall is bypassed. You can validate this symptom by the absence of network or application rules log entries in Azure Firewall.
 
 In most cases, one of the following issues causes these problems:
 
