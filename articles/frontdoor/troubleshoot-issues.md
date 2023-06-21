@@ -158,7 +158,7 @@ The origin is configured as an IP address. The origin is healthy, but rejecting 
 
 ### Cause
 
-Azure Front Door users the origin host name as the SNI header during SSL handshake. Since the origin is configured as an IP address, the failure can be caused by one of the following reasons:
+Azure Front Door uses the origin host name as the SNI header during SSL handshake. Since the origin is configured as an IP address, the failure can be caused by one of the following reasons:
 
 * Certificate name check is enabled in the Front Door origin configuration. It's recommended to leave this setting enabled. Certificate name check requires the origin host name to match the certificate name or one of the entries in the subject alternative names extension.
 * If certificate name check is disabled, then the cause is likely due to the origin certificate logic rejecting any requests that don't have a valid host header in the request that matches the certificate.
